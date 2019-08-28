@@ -1,3 +1,27 @@
+.small {
+  background-color: red;
+  height: 300px;
+  padding: 20px;
+}
+
+.medium {
+  background-color: green;
+  height: 300px;
+  padding: 20px;
+  /*border-width: 5px 20px 50px;*/
+  /*border-color: black;*/
+  /*border-style: solid;*/
+}
+
+.desktop {
+  background-color: blue;
+  height: 300px;
+  padding: 20px;
+  /*border-width: 5px 20px 50px;*/
+  /*border-color: black;*/
+  /*border-style: solid;*/
+}
+
 @media only screen and (max-width: 300px){
   body {
     background-color: red;
@@ -5,14 +29,23 @@
   }
   .small {
     width: 100%;
+    border-width: 5px 5px 5px 5px;
+    border-color: black;
+    border-style: solid;
   }
 
   .medium {
     width: 100%;
+    border-width: 0 5px 5px 5px;
+    border-color: black;
+    border-style: solid;
   }
 
-  .large {
+  .desktop {
     width: 100%;
+    border-width: 0 5px 5px 5px;
+    border-color: black;
+    border-style: solid;
   }
 }
 * {
@@ -26,14 +59,29 @@
   }
 
   .small {
-    width: 66.66%;
+    width: 33.33%;
+    float: left;
+    border-width: 5px 5px 5px 5px;
+    border-color: black;
+    border-style: solid;
+    overflow: scroll;
   }
 
   .medium {
     width: 33.33%;
+    float: left;
+    border-width: 5px 5px 5px 0;
+    border-color: black;
+    border-style: solid;
+    overflow: scroll;
   }
-  .large {
-    width: 100%;
+  .desktop {
+    width: 33.33%;
+    float: right;
+    border-width: 5px 5px 5px 0;
+    border-color: black;
+    border-style: solid;
+    overflow: scroll;
   }
 }
 
@@ -45,16 +93,24 @@
   .small {
     width: 33.33%;
     float: left;
+    border-width: 5px 5px 5px 5px;
+    border-color: black;
+    border-style: solid;
   }
 
   .medium {
     width: 33.33%;
     float: left;
-    padding-right: 10px;
+    border-width: 5px 5px 5px 0;
+    border-color: black;
+    border-style: solid;
   }
 
-  .large {
+  .desktop {
     width: 33.33%;
     float: right;
+    border-width: 5px 5px 5px 0;
+    border-color: black;
+    border-style: solid;
   }
 }
